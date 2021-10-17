@@ -1,1 +1,12 @@
-x
+body {margin:5px;}
+h1 { font-size: 1.3em; font-family: Helvetica,sans-serif; color:navy;}
+h2 { font-size: 1.1em; font-family: 'Times New Roman', Times, serif; color:navy;}
+input {background-color:antiquewhite; margin: 5px; }
+#lunch-menu {width:65%;}
+hr { width: 30%; margin-left:0; border-color: #a0a0a0; }
+button.check { margin-left:5px; color:blue; background-color: blanchedalmond;}
+div.red { color: red;}
+div.green { color: green;}
+input.red { border-color: red;}
+input.green { border-color: lightgreen;}
+span.label {margin-left:10px; color:#404040; font-size:0.9em; font-family: 'Lucida Sans';}

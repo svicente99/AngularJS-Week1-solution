@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="LunchCheck">
+<head>
+    <meta charset="UTF-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <title>LunchCheck App - Assignment 1 - FullStack Course 5</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/app.css" type="text/css">
+</head>
+<body>
+    <h1>Lunch Check App</h1>
+    <h2>FullStack Course 5 - Assignment 1 Solution</h1>
+    <div ng-controller="LunchCheckController">
+
+        <div class="form-group">
+            <span class="label">Dishes you like to eat in your lunch:</span>
+
+            <input id="lunch-menu" type="text" ng-class="{'No':'red', 'Ok':'green'}[valid]"
+            placeholder="list comma separated what you usually have for lunch. 
+            Obs.: empty item is not allowed in list, like , ,"
+            class="form-control" ng-model="lunch_itens" maxlength="1000">
+        </div>
+        <div class="form-group" ng-click="checkLunch()">
+            <button class="btn btn-default check">Check If Too Much</button>
+        </div>
+        <hr>
+        <div class="form-group message" ng-class="{'No':'red', 'Ok':'green'}[result]">
+        {{message}}  <!-- Result message can go here. -->
+        <br>{{num_itens}}
+        </div>
+
+    </div>
+</body>
+</html>
